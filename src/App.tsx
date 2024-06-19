@@ -70,6 +70,7 @@ const App: React.FC = () => {
     dispatch(setStep(0));
     dispatch(setAnswers([]));
     setTimeIsUp(false);
+    setTimeLeft(questions[currentStep].timeLimit);
   };
 
   const progress = ((currentStep + 1) / questions.length) * 100;
